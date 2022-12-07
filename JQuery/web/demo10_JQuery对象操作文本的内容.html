@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <input type="text" value="张三" id="idt">
+    <div id="city">
+        <h1>陕西西安</h1>
+    </div>
+
+<script>
+    let val = $("#idt").val();
+
+    let valhtml = $("#city").html("<h1>山西临汾</h1>").html();
+    alert(valhtml);
+</script>
+</body>
+</html>

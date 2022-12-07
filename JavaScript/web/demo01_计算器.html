@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算器</title>
+    <style>
+        input[type='button']{
+            width: 80px;
+            height: 70px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center">计算器</h1>
+    <table style="width: 500px; height: 500px; margin: auto;" border="1px">
+        <tr>
+           <td colspan="5" style="text-align: center">
+               <input style="width: 450px; height: 40px" type="text" id="msg" value="0">
+               <!--<span id="msg"></span>-->
+           </td>
+        </tr>
+        <tr style="height: 100px">
+            <th><input type="button" onclick="cal(this.value)" value="7"></th>
+            <th><input type="button" onclick="cal(this.value)" value="8"></th>
+            <th><input type="button" onclick="cal(this.value)" value="9"></th>
+            <th><input type="button" onclick="cal(this.value)" value="+"></th>
+            <th><input type="button" onclick="cal(this.value)" value="-"></th>
+        </tr>
+        <tr style="height: 100px">
+            <th><input type="button" onclick="cal(this.value)" value="4"></th>
+            <th><input type="button" onclick="cal(this.value)" value="5"></th>
+            <th><input type="button" onclick="cal(this.value)" value="6"></th>
+            <th><input type="button" onclick="cal(this.value)" value="*"></th>
+            <th><input type="button" onclick="cal(this.value)" value="/"></th>
+        </tr>
+        <tr style="height: 100px">
+            <th><input type="button" onclick="cal(this.value)" value="1"></th>
+            <th><input type="button" onclick="cal(this.value)" value="2"></th>
+            <th><input type="button" onclick="cal(this.value)" value="3"></th>
+            <th><input type="button" onclick="cal(this.value)" value="%"></th>
+            <th><input type="button" onclick="equal()" value="="></th>
+        </tr>
+        <tr style="height: 100px">
+            <th colspan="3"><input type="button" onclick="cal(this.value)" value="0"></th>
+            <th><input type="button" onclick="AC()" value="AC"></th>
+            <th><input type="button" onclick="toBack()" value="←"></th>
+        </tr>
+    </table>
+
+    <script>
+        let msg = document.getElementById("msg");
+        var text = "";
+        var res = 0;
+        var sym = "";
+        var num = 0;
+
+        function cal(value) {
+            text += value;
+            msg.value=text;
+        }
+
+        function equal() {
+            var res = msg.value;
+             let eval1 = eval(res);
+            msg.value = eval1;
+        }
+
+        function AC() {
+            text = "";
+            msg.value=0;
+        }
+
+        function toBack() {
+            let length = msg.value.length;
+            msg.value.substring(0,length-1);
+        }
+
+
+    </script>
+</body>
+</html>

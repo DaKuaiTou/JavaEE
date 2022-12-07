@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.3.1.js"></script>
+</head>
+<body>
+    <input type="text" id="idt" value="张三">
+    <script>
+        // 获取输入框的值
+        // 通过js的方式获取值
+        let idt = document.getElementById("idt");
+        /*let value = idt.value;
+        alert(value);*/
+
+        // 通过JQuery的方式获取值
+        let $idt = $("#idt");
+        /*let val = $idt.val();
+        alert(val);*/
+
+        // 将JQuery对象转换成JS对象
+        alert($(idt).val());
+
+        // 将JS对象转换成JQuery对象
+        //alert($idt.get(0).value);
+    </script>
+
+</body>
+</html>

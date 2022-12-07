@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定时弹框广告</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <div id="guanggao" style="display: none">
+        <img src="img/0.png" height="200" width="202">
+    </div>
+    <h1>网站的首页</h1>
+    <script>
+        // 声明一个函数，用于广告的显示
+        function showGuangGao() {
+            $("#guanggao").slideDown(3000,function () {
+                setTimeout(hideGuanggao,3000);
+            })
+        }
+        // 声明一个函数，用于广告的隐藏
+        function hideGuanggao() {
+            $("#guanggao").slideUp(3000);
+        }
+        // 当页面加载后，三秒后会调用广告显示的方法
+        setTimeout(showGuangGao,3000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+    <script src="js/jquery-3.3.1.js"></script>
+</head>
+<body>
+<form action="#" method="post">
+    <input type="text" name="username" onblur="checkUsername(this.value)">
+    <span id="msg" style="color: red"></span>
+</form>
+
+<script>
+    function checkUsername(username) {
+        /*$.post("person","action=checkUsername&username="+username,function (result) {
+            $("#msg").html(result);
+        });*/
+        $.ajax({
+            url:"person",
+            data:"action=checkUsername&username="+username,
+            type:"post",
+            success:function (result) {
+                $("#msg").html(result)
+            },
+            error:function (result) {
+                $("#msg").html(result)
+            }
+        });
+    }
+</script>
+</body>
+</html>

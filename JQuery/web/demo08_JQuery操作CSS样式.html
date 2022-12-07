@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>操作</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <style>
+        .red{
+            background-color: red;
+            width: 600px;
+            height: 60px;
+        }
+        .orange{
+            background-color: orange;
+            width: 600px;
+            height: 60px;
+        }
+    </style>
+</head>
+<body>
+<input id="idt" type="text" onmouseover="fn1()" onmouseout="fn2()">
+
+<script>
+    // 目标：鼠标移动到输入框的时候，设置输入框的背景颜色为红色，离开输入框的时候，设置输入框的背景颜色为橙色
+    function fn1() {
+        $("#idt").addClass("red");
+        $("#idt").removeClass("orange")
+    }
+
+    function fn2() {
+        $("#idt").addClass("orange")
+        $("#idt").removeClass("red");
+    }
+</script>
+</body>
+</html>

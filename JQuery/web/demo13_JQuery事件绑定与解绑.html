@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQ事件绑定与解绑</title>
+    <script src="js/jquery-3.3.1.js"></script>
+</head>
+<body>
+<input type="button" id="btn" value="提交">
+<input type="text" id="inputId" value="请输入用户名">
+<select id="selectId">
+    <option value="zhangsan">张三</option>
+    <option value="lisi">李四</option>
+    <option value="wangwu">王五</option>
+    <option value="zhaoliu">赵六</option>
+</select>
+<div id="divId">
+    这是一个块级标签
+</div>
+
+<script>
+    // 目标：给button按钮绑定点击事件
+    $("#btn").on("click",function () {
+        alert("被点击了")
+    })
+    $("#btn").on("mouseover",function () {
+        alert("鼠标移入")
+    })
+    $("#btn").off("mouseover");
+</script>
+</body>
+</html>

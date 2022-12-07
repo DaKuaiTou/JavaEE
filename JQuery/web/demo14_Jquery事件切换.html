@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.3.1.js"></script>
+</head>
+<body>
+<input type="button" id="btn" value="提交">
+<input type="text" id="inputId" value="请输入用户名">
+<select id="selectId">
+    <option value="zhangsan">张三</option>
+    <option value="lisi">李四</option>
+    <option value="wangwu">王五</option>
+    <option value="zhaoliu">赵六</option>
+</select>
+<div id="divId">
+    这是一个块级标签
+</div>
+<script>
+    // 基本写法
+    /*$("#inputId").mouseover(function () {
+        console.log("鼠标进入文本框");
+    });
+    $("#inputId").mouseout(function () {
+        console.log("鼠标移出文本框");
+    });*/
+    // 链式写法
+    /*$("#inputId").mouseover(function () {
+        console.log("鼠标进入文本框")
+    }).mouseout(function () {
+        console.log("鼠标移出文本框")
+    });*/
+    // hover
+    // JQ对象中，hover方法可以同时给标签绑定移入和移出的事件
+    $("#inputId").hover(function () {
+        console.log("鼠标进入文本中")
+    },function () {
+        console.log("鼠标离开文本")
+    });
+</script>
+</body>
+</html>

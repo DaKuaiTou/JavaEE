@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--使用X-UA-Compatible来设置IE浏览器兼容模式 最新的渲染模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery-3.3.1.js"></script>
+    <style>
+        .colBorder{
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello!World</h1>
+        <div class="row">
+            <div class="col-md-4 colBorder">4列</div>
+            <div class="col-md-8 colBorder">8列</div>
+        </div><br><br>
+        <!--列组合-->
+        =====================================================================列组合================================================================
+        <div class="row">
+            <div class="col-lg-2 colBorder">2列</div>
+            <div class="col-lg-2 colBorder">4列</div>
+            <div class="col-lg-2 colBorder">6列</div>
+            <div class="col-lg-2 colBorder">8列</div>
+            <div class="col-lg-2 colBorder">10列</div>
+            <div class="col-lg-2 colBorder">12列</div>
+            <div class="col-lg-2 colBorder">12列</div>
+        </div><br><br>
+        <!--列偏移-->
+        =====================================================================列偏移================================================================
+        <div class="row">
+            <div class="col-md-1 colBorder">1列</div>
+            <div class="col-md-1 colBorder">2列</div>
+            <div class="col-md-1 col-md-offset-8 colBorder">11列</div>
+            <div class="col-md-1 colBorder">12列</div>
+        </div><br><br>
+        <!-- 列排序 -->
+        =====================================================================列排序================================================================
+        <div class="row">
+            <div class="col-md-1 col-md-pull-3 colBorder">左浮动3列</div>
+            <div class="col-md-1 col-md-push-5  colBorder">右浮动5列</div>
+        </div><br><br>
+        <!-- 列嵌套 -->
+        =====================================================================列排序================================================================
+        <div class="row">
+            <div class="col-md-2 colBorder">
+                里面套一个网格
+                <div class="row">
+                    <div class="col-md-5 colBorder">5列</div>
+                    <div class="col-md-7 colBorder">7列</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

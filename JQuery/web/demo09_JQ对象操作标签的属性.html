@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery对象操作标签的属性</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <input type="text" name="username" eat="apple">
+    <script>
+        // 设置输入框的name的属性为nickname
+        /*$("input").attr("name","nickname");
+        alert($("input").attr("name"));*/
+
+        /*$("input").prop("name","name");
+        alert($("input").prop("name"))*/
+
+        /*$("input").attr("eat","banana");
+        alert($("input").attr("eat"))*/
+        /*$("input").prop("eat","orange");
+        alert($("input").prop("eat"))*/
+
+        alert($("input").attr("checked"));// 获取boolean值
+    </script>
+</body>
+</html>

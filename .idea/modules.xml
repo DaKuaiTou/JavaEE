@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Ajax/Ajax.iml" filepath="$PROJECT_DIR$/Ajax/Ajax.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ajax_JSON_PersonList/Ajax_JSON_PersonList.iml" filepath="$PROJECT_DIR$/Ajax_JSON_PersonList/Ajax_JSON_PersonList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ajax_checkUser/Ajax_checkUser.iml" filepath="$PROJECT_DIR$/Ajax_checkUser/Ajax_checkUser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BootStrapDemo/BootStrapDemo.iml" filepath="$PROJECT_DIR$/BootStrapDemo/BootStrapDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Filter/Filter.iml" filepath="$PROJECT_DIR$/Filter/Filter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JQuery/JQuery.iml" filepath="$PROJECT_DIR$/JQuery/JQuery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JSON/JSON.iml" filepath="$PROJECT_DIR$/JSON/JSON.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JSON_Search/JSON_Search.iml" filepath="$PROJECT_DIR$/JSON_Search/JSON_Search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JSP_JSTL_EL/JSP_JSTL_EL.iml" filepath="$PROJECT_DIR$/JSP_JSTL_EL/JSP_JSTL_EL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaScript/JavaScript.iml" filepath="$PROJECT_DIR$/JavaScript/JavaScript.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LinkPerson/LinkPerson.iml" filepath="$PROJECT_DIR$/LinkPerson/LinkPerson.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Listener/Listener.iml" filepath="$PROJECT_DIR$/Listener/Listener.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ServletDemo/ServletDemo.iml" filepath="$PROJECT_DIR$/ServletDemo/ServletDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cookie&amp;session/cookie&amp;session.iml" filepath="$PROJECT_DIR$/cookie&amp;session/cookie&amp;session.iml" />
+      <module fileurl="file://$PROJECT_DIR$/request&amp;response/request&amp;response.iml" filepath="$PROJECT_DIR$/request&amp;response/request&amp;response.iml" />
+    </modules>
+  </component>
+</project>

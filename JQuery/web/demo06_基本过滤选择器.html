@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<table id="tab1" border="1" width="800px" align="center">
+    <tr>
+        <td colspan="5"><input type="button" value="删除"></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>分类ID</td>
+        <td>分类名称</td>
+        <td>分类描述</td>
+        <td>操作</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>1</td>
+        <td>手机数码</td>
+        <td>华为|小米|苹果</td>
+        <td><a href="#">修改</a> &nbsp;<a href="#">删除</a></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>1</td>
+        <td>手机数码</td>
+        <td>华为|小米|苹果</td>
+        <td><a href="#">修改</a> &nbsp;<a href="#">删除</a></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>1</td>
+        <td>手机数码</td>
+        <td>华为|小米|苹果</td>
+        <td><a href="#">修改</a> &nbsp;<a href="#">删除</a></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>1</td>
+        <td>手机数码</td>
+        <td>华为|小米|苹果</td>
+        <td><a href="#">修改</a> &nbsp;<a href="#">删除</a></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>1</td>
+        <td>手机数码</td>
+        <td>华为|小米|苹果</td>
+        <td><a href="#">修改</a> &nbsp;<a href="#">删除</a></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>1</td>
+        <td>手机数码</td>
+        <td>华为|小米|苹果</td>
+        <td><a href="#">修改</a> &nbsp;<a href="#">删除</a></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>1</td>
+        <td>手机数码</td>
+        <td>华为|小米|苹果</td>
+        <td><a href="#">修改</a> &nbsp;<a href="#">删除</a></td>
+    </tr>
+</table>
+<script>
+    // 基本过滤选择器
+    // 目标1：设置第一行的背景为红色
+    $("tr:first").css("background-color","red");
+    // 目标2：设置最后一行的背景为红色
+    $("tr:last").css("background","yellow");
+    // 目标3：设置所有的偶数行为绿色
+    $("tr:even").css("background","blue");
+    // 目标4：设置所有的奇数行为绿色
+    $("tr:odd").css("background","green");
+    // 目标5：设置下标为3的那一行tr的背景为orange
+    $("tr:eq(3)").css("background","orange");
+    // 目标6：设置下标小于3的那些行背景颜色为gray
+    $("tr:eq(3)").css("background","gray");
+    // 目标7：设置下标大于3的那些行背景颜色为blue
+    $("tr:eq(3)").css("background","blue");
+</script>
+</body>
+</html>

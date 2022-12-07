@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery事件的使用</title>
+    <script src="js/jquery-3.3.1.js"></script>
+</head>
+<body>
+    <input type="button" id="btn" value="提交">
+    <input type="text" id="inputId" placeholder="请输入用户名">
+    <select id="selectId">
+        <option value="zhangsan">张三</option>
+        <option value="lisi">李四</option>
+        <option value="wangwu">王五</option>
+        <option value="zhaoliu">赵六</option>
+    </select>
+    <div id="divId">
+        这是一个块级标签
+    </div>
+<script>
+    // JQuery点击事件
+    $("#btn").click(function () {
+        alert("提交已点击");
+    });
+    // JQ对象的焦点事件
+    $("#inputId").focus(function () {
+        console.log("文本框获取焦点");
+        console.log($("#inputId").val());
+    });
+    $("#inputId").blur(function () {
+        console.log("文本框失去焦点");
+    });
+    // JQ对象的内容改变事件
+    $("#selectId").change(function () {
+        console.log("下拉框内容改变了，值" + $("#selectId").val());
+    })
+    // JQ对象的鼠标相关事件
+    $("#divId").mouseover(function () {
+        console.log("鼠标进入div中")
+    })
+    $("#divId").mouseout(function () {
+        console.log("鼠标移出div")
+    });
+    // JQ对象的键盘事件
+    $("#inputId").keydown(function () {
+        console.log("键盘落下");
+    });
+    $("#inputId").keyup(function () {
+        console.log("键盘抬起");
+    });
+
+</script>
+</body>
+</html>

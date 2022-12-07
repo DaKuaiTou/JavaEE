@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>电子时钟</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <style>
+        div{
+            font-size: 40px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="time"></div>
+    <input type="button" value="开始" onclick="startTime()">
+    <input type="button" value="停止" onclick="pauseTime()">
+<script>
+    // 给开始按钮绑定点击事件，点击之后，在id为time的div显示当前的时间，并且始终的数字会动起来
+    var id = null;
+    function startTime() {
+        var time = new Date().toLocaleString();
+        $("#time").html(time);
+        // 每次开始定时器之前，要先清楚原来的定时器
+        /*if(id != null){
+           clearInterval(id);
+        }*/
+        id = setInterval(function () {
+            var time = new Date().toLocaleString();
+            $("#time").html(time);
+        },1000);
+    }
+
+
+    function pauseTime() {
+        clearInterval(id);
+    }
+</script>
+</body>
+</html>

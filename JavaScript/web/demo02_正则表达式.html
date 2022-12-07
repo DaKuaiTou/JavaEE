@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*// 1.出现任意数字三次
+    let reg1 = /^\d{3}$/;
+    let feg2 = /\d{3}/; //模糊匹配，连续的三个数字
+    let num = 12345;
+    let b = reg1.test(num);
+    alert(b);
+    // 2.只能是英文字母，出现6-10次
+    let reg3 = /^[a-zA-Z]{6,10}&/;
+    let str = "abcdef";
+    // let flag = reg3.test(str);
+    // alert("flag的值:" + flag)
+    // 3.只能是英文字母和数字组成，长度为4-16个字符，并且以英文字母开头
+    let reg4 = /^[a-zA-Z][a-zA-Z0-9]{3-15}$/;
+    var str4 = "asdfdasf";
+    // let flag = reg4.test(str4);
+    // alert("flag的值是：" + flag);
+    // 4.手机号码：以1开头，第二位是3,4,5,6,7,8,9的11位数字
+    let reg5 = /^1[3456789]$/;*/
+    let reg5 = /^[1][3456789][0-9]{9}$/
+    var reg1 = /^\d{3}$/;
+    let b = reg5.test(13546538547);
+    alert(b)
+</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON格式</title>
+</head>
+<body>
+
+<script>
+    // 在js里面，JSON其实就是一个js对象，它的格式：{key:value,key:value,...}.JSON格式的主要作用是存储数据
+    var usre = {"username": "张三", "password": "123456", "age": 18};
+
+    // 在json中的键值对的键一般都是字符串，json中的键值对的值可以是任意类型
+    var person1 = {
+        "username": "张三",
+        "password": "123456",
+        "age": 18,
+        "wife": {
+            "username": "张三媳妇",
+            "password": "654321",
+            "age": "19",
+        }
+    }
+
+    // 数组形式
+    var jsonArr = [
+        {"username": "张三", "password": "123456", "age": 18},
+        {"username": "张三", "password": "123456", "age": 18},
+        {"username": "张三", "password": "123456", "age": 18},
+    ];
+
+    // 混合模式
+    var person2 = {
+        "username": "张三",
+        "password": "123456",
+        "age": 18,
+        "wife": {
+            "username": "张三媳妇",
+            "password": "654321",
+            "age": "19",
+        },
+        "son": [
+            {
+                "son1": {
+                    "username": "张三大儿子",
+                    "password": "321456",
+                    "age": 8,
+                }
+            },
+            {
+                "son2": {
+                    "username": "张三小儿子",
+                    "password": "654321",
+                    "age":6,
+                }
+            }
+        ]
+    };
+
+    alert(person2.son[1].son2.username);
+</script>
+</body>
+</html>

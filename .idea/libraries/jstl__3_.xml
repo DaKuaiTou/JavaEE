@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jstl (3)">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Ajax_JSON_PersonList/web/WEB-INF/lib/jstl.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格错行显示不同的颜色</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <style>
+        tr{
+            text-align: center;
+        }
+        .grayStyle{
+            background-color: gray;
+        }
+        .goldenrod{
+            background-color: goldenrod;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+<table id="tableId" border="1" width="800px" align="center">
+    <tr>
+        <th colspan="5">业务表格</th>
+    </tr>
+    <tr>
+        <th><input type="checkbox"></th>
+        <th>编号</th>
+        <th>姓名</th>
+        <th>业务</th>
+        <th>操作</th>
+    </tr>
+    <tr>
+        <th><input type="checkbox"></th>
+        <td>1</td>
+        <td>张三</td>
+        <td>更改昵称</td>
+        <td><a href="javascript:void(0)">修改</a><a href="javascript:void(0)">删除</a></td>
+    </tr>
+    <tr>
+        <th><input type="checkbox"></th>
+        <td>1</td>
+        <td>张三</td>
+        <td>更改昵称</td>
+        <td><a href="javascript:void(0)">修改</a><a href="javascript:void(0)">删除</a></td>
+    </tr>
+    <tr>
+        <th><input type="checkbox"></th>
+        <td>1</td>
+        <td>张三</td>
+        <td>更改昵称</td>
+        <td><a href="javascript:void(0)">修改</a><a href="javascript:void(0)">删除</a></td>
+    </tr>
+    <tr>
+        <th><input type="checkbox"></th>
+        <td>1</td>
+        <td>张三</td>
+        <td>更改昵称</td>
+        <td><a href="javascript:void(0)">修改</a><a href="javascript:void(0)">删除</a></td>
+    </tr><tr>
+    <th><input type="checkbox"></th>
+    <td>1</td>
+    <td>张三</td>
+    <td>更改昵称</td>
+    <td><a href="javascript:void(0)">修改</a><a href="javascript:void(0)">删除</a></td>
+</tr>
+</table>
+
+<script>
+    // 隔行换色
+    $("tr:even").addClass("grayStyle");
+    $("tr:odd").addClass("goldenrod");
+
+    $("tr").mouseover(function () {
+        $(this).addClass("yellow");
+    }).mouseout(function () {
+        $(this).removeClass("yellow")
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery对象的遍历方法</title>
+    <script src="js/jquery-3.3.1.js"></script>
+</head>
+<body>
+    <ul id="city1">
+        <li value="linfen">临汾</li>
+        <li value="taiyuan">太原</li>
+        <li value="jinzhong">晋中</li>
+    </ul>
+    <ul id="city2">
+        <li value="xian">西安</li>
+        <li value="hanzhong">汉中</li>
+        <li value="yvlin">榆林</li>
+    </ul>
+
+<script>
+    var arr = [1,2,3,"张三","李四","王五"];
+    // 使用js的方式遍历
+    /*for (var i=0; i<arr.length; i++){
+        console.log(arr[i]);
+    }*/
+
+    // 使用JQ的方式遍历
+    /*$(arr).each(function (index,element) {
+        console.log(index + ":" + element)
+    })*/
+    /*$("#city1>li").each(function (index,element) {
+        console.log(index + ":" + $(element).html())
+    });*/
+    /*$("li").each(function (index,element) {
+        console.log(index + "：" + $(element).html())
+    })*/
+    /*$.each($("#city1>li"),function (index,element) {
+        console.log(index + ":" + $(element).html())
+    })*/
+    /*$.each(arr,function (index,element) {
+        console.log(index + ":" + element);
+    })*/
+    for (element of $(arr)){
+        console.log(element)
+    }
+
+</script>
+</body>
+</html>

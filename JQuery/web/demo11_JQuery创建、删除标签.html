@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<input type="text" id="msg" placeholder="请输入城市">
+<input type="button" value="添加" onclick="addCity()"><br/>
+<input type="button" value="删除" onclick="removeCity()"><br/>
+<input type="button" value="清空所有城市" onclick="removeAllCity()"><br/>
+<ul id="city">
+    <li id="bj">北京</li>
+    <li id="sh">上海</li>
+    <li id="sz">深圳</li>
+    <li id="gz">广州</li>
+</ul>
+
+
+<script>
+    function addCity() {
+        // 点击添加，往目标里添加长沙
+        let $bj = $("#city");
+        //$bj.append("<li id='cs'>长沙</li>");
+        //$("<li id='cs'>长沙</li>").appendTo($bj);
+        //$("<li id='cs'>长沙</li>").prependTo($bj);
+        let msg = $("#msg").val();
+        $bj.append("<li>" + msg+　"</li>");
+    }
+    function removeCity(){
+        alert($("#msg").val());
+    }
+
+</script>
+</body>
+</html>

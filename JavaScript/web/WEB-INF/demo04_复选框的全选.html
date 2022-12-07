@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>复选框全选</title>
+    <style>
+        tr{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+<table id="tableId" border="1" width="800px" align="center">
+    <tr>
+        <th><input type="button" onclick="deleteTr()" id="delete" value="删除">
+        </th>
+        <th colspan="4">业务表格</th>
+    </tr>
+    <tr>
+        <th><input type="button" value="全选" onclick="allSelect()" id="all"></th>
+        <th>编号</th>
+        <th>姓名</th>
+        <th>业务</th>
+        <th>操作</th>
+    </tr>
+    <tr>
+        <td><input type="checkbox" class="item"></td>
+        <td>1</td>
+        <td>张三</td>
+        <td>更改昵称</td>
+        <td><a href="javascript:void(0);">修改</a>&nbsp;<a href="javascript:void(0);">删除</a></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" class="item"></td>
+        <td>1</td>
+        <td>张三</td>
+        <td>更改昵称</td>
+        <td><a href="javascript:void(0);">修改</a>&nbsp;<a href="javascript:void(0);">删除</a></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" class="item"></td>
+        <td>1</td>
+        <td>张三</td>
+        <td>更改昵称</td>
+        <td><a href="javascript:void(0);">修改</a>&nbsp;<a href="javascript:void(0);">删除</a></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" class="item"></td>
+        <td>1</td>
+        <td>张三</td>
+        <td>更改昵称</td>
+        <td><a href="javascript:void(0);">修改</a>&nbsp;<a href="javascript:void(0);">删除</a></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" class="item"></td>
+        <td>1</td>
+        <td>张三</td>
+        <td>更改昵称</td>
+        <td><a href="javascript:void(0);">修改</a>&nbsp;<a href="javascript:void(0);">删除</a></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" class="item"></td>
+        <td>1</td>
+        <td>张三</td>
+        <td>更改昵称</td>
+        <td><a href="javascript:void(0);">修改</a>&nbsp;<a href="javascript:void(0);">删除</a></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" class="item"></td>
+        <td>1</td>
+        <td>张三</td>
+        <td>更改昵称</td>
+        <td><a href="javascript:void(0);">修改</a>&nbsp;<a href="javascript:void(0);">删除</a></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" class="item"></td>
+        <td>1</td>
+        <td>张三</td>
+        <td>更改昵称</td>
+        <td><a href="javascript:void(0);">修改</a>&nbsp;<a href="javascript:void(0);">删除</a></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" class="item"></td>
+        <td>1</td>
+        <td>张三</td>
+        <td>更改昵称</td>
+        <td><a href="javascript:void(0);">修改</a>&nbsp;<a href="javascript:void(0);">删除</a></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" class="item"></td>
+        <td>1</td>
+        <td>张三</td>
+        <td>更改昵称</td>
+        <td><a href="javascript:void(0);">修改</a>&nbsp;<a href="javascript:void(0);">删除</a></td>
+    </tr>
+</table>
+
+<script>
+    // 全选：给全选框的绑定添加事件，设置所有的自选框的选中状态和全选框一致
+    function allSelect() {
+        let item = document.getElementsByClassName("item");
+        for (let itemKey in item) {
+            item[itemKey].checked = !item[itemKey].checked;
+        }
+    }
+
+    function deleteTr() {
+        let item = document.getElementsByClassName("item");
+        for (let itemKey in item) {
+            let flag = item[itemKey].checked;
+            if(flag){
+                item.parentNode.removeChild(itemKey);
+            }
+        }
+    }
+
+    function deleteFlag(flag) {
+
+    }
+</script>
+</body>
+</html>

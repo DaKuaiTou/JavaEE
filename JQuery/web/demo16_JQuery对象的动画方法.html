@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery对象的动画方法</title>
+    <script src="js/jquery-3.3.1.js"></script>
+    <style>
+        div{
+            position: fixed;
+            right: 0;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <img src="img/0.png" height="200" width="202" id="dog"><br>
+    <div>
+        <input id="btn" type="button" value="显示" onclick="showImg()"><br>
+        <input type="button" value="隐藏" onclick="hideImg()"><br>
+        <input type="button" value="切换" onclick="toggleImg()"><br>
+    </div>
+<script>
+    function showImg() {
+        /*$("#dog").show("slow",function () {
+            console.log("图片显示了");
+        });*/
+        // 向下滑动
+        $("#dog").slideDown(2000);
+
+        // 淡入
+        //$("#dog").fadeIn(2000);
+    }
+    function hideImg() {
+        $("#dog").hide("slow",function () {
+            console.log("图片隐藏了")
+        })
+    }
+    function toggleImg() {
+        $("#dog").toggle("slow",function () {
+            console.log("显示/隐藏")
+        })
+    }
+</script>
+</body>
+</html>
